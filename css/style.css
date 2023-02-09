@@ -1,67 +1,118 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&family=Noto+Serif+Khojki:wght@400;500&family=Nunito:wght@800&display=swap');
+
+* {
     padding: 0;
     margin: 0;
 }
 
-html,body{
+html,
+body {
     width: 100%;
     height: 100%;
+    width: 100%;
+    height: 100%;
+    background: url("../imagens/capa2.jpg");
+    background-size: cover;
+
 }
 
-nav{
+nav {
     width: 100%;
     height: 8vh;
     display: flex;
+    position: absolute;
     justify-content: space-around;
     align-items: center;
-    font-family:cursive;
+    font-family: 'Noto Serif Khojki', serif;
+    color: white;
     flex-wrap: wrap;
+
+
 }
 
-nav{
-    background-color: antiquewhite;
-    opacity: ;
+nav {
+    background: linear-gradient(rgb(21, 107, 11), transparent);
+    border-bottom: 0.1px solid greenyellow;
+
 }
 
-.logo{
+.logo {
     margin: 0 5vw 0 5vw;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
 }
 
-.itens{
-    margin:0 10px 0 10px;
+.itens {
+    margin: 0 10px 0 10px;
     padding: 0 10px 0 10px;
 }
 
-.itens li{
-    padding: 0 10px 0 10px; 
+.itens li {
+    padding: 0 10px 0 10px;
 }
 
-.itens-registro li{
+.itens-registro li {
     width: 100%;
     padding: 0 5px 0 5px;
-   
+
 }
 
-.itens-registro{
+.itens-registro {
     margin: 0 5vw 0 20vw;
 }
 
-main{
+main {
     width: 100%;
     height: 100%;
-    background:url("../imagens/instrumentos-capa.jpg") ;
-    background-size:a;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
 }
 
-@media screen and (max-width:700px){
-    header{
-             width: 100%;
+.titulo {
+    color: white;
+    font-size: 50px;
+}
+
+.imagem-susten {
+    width: 2fr;
+    height: 20vw;
+    border-radius: 100%;
+    margin-top: 4%;
+    padding: 10px 10px 10px 10px;
+
+}
+
+main img {
+    box-shadow: 0 0 10px 5px rgb(14, 197, 38);
+    /*adicionando sombra na imagem sustentavel*/
+}
+
+.itens li:hover {
+    /* background: rgb(97, 211, 101); */
+    font-size: 150%;
+    cursor: pointer;
+    /* box-shadow: 0 0 5px 0 rgb(220, 227, 220); */
+}
+
+.logo img{
+    width: 80%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:700px) {
+    header {
+        width: 100%;
     }
 
-    
+
 }
