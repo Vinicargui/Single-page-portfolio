@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&family=Noto+Serif+Khojki:wght@400;500&family=Nunito:wght@800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&family=Noto+Serif+Khojki:wght@400;500&family=Nunito:wght@800&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -8,24 +8,25 @@
 html,
 body {
     width: 100%;
-    height: 100%;
-    width: 100%;
-    height: 100%;
-    background: url("../imagens/capa2.jpg");
-    background-size: cover;
+    height: 100%;   
+    /* background: url("../imagens/capa2.jpg");
+    background-size: cover; */
 
 }
+
+
 
 nav {
     width: 100%;
     height: 8vh;
     display: flex;
-    position: absolute;
-    justify-content: space-around;
+    position:fixed;
+    justify-content:space-around;
     align-items: center;
     font-family: 'Noto Serif Khojki', serif;
     color: white;
     flex-wrap: wrap;
+    
 
 
 }
@@ -37,7 +38,10 @@ nav {
 }
 
 .logo {
-    margin: 0 5vw 0 5vw;
+    
+    display: flex;
+    flex-direction: row;
+    
 }
 
 ul {
@@ -51,7 +55,7 @@ ul {
 }
 
 .itens li {
-    padding: 0 10px 0 10px;
+    padding: 0 50px 0 50px;
 }
 
 .itens-registro li {
@@ -62,6 +66,11 @@ ul {
 
 .itens-registro {
     margin: 0 5vw 0 20vw;
+}
+main{ width: 100%;
+    height: 100%;
+    background: url("../imagens/capa2.jpg");
+    background-size: cover;
 }
 
 main {
@@ -83,7 +92,7 @@ main {
 
 .imagem-susten {
     width: 2fr;
-    height: 20vw;
+    height: 25vw;
     border-radius: 100%;
     margin-top: 4%;
     padding: 10px 10px 10px 10px;
@@ -99,20 +108,268 @@ main img {
     /* background: rgb(97, 211, 101); */
     font-size: 150%;
     cursor: pointer;
+    transition: 1s;
     /* box-shadow: 0 0 5px 0 rgb(220, 227, 220); */
 }
 
-.logo img{
-    width: 80%;
-    height: 8%;
+ .logo img{
+    height: 3vw;
+
+}
+.logo P{
     display: flex;
     align-items: center;
 }
-
-@media screen and (max-width:700px) {
-    header {
-        width: 100%;
-    }
+.classe-historia{
+    width:100%;
+    height:70%;
+    display: grid;
+    color: white;
+    font-family:'Dancing Script', cursive;
+    font-size:55px; 
+    grid-template-columns: 50% 50%;
+    background-color: rgb(49, 71, 46);
 
 
 }
+
+.grid-descricao{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+   
+}
+
+.grid-descricao h1{
+    text-align: center;
+    /* margin: 10px 0 20px; */
+}
+
+.grid-descricao p{
+line-height: 1.8;
+text-indent: 1.5em;
+
+}
+
+.grid-fotos{
+    width: 100%;
+    height:100%;
+    display: flex;
+    /* grid-template-columns: 50% 50%; */
+    /* object-fit: cover; */
+    /* gap: 5px 10px  ;  */
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.grid-fotos img{
+    width:90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    /* overflow: hidden; */
+}
+
+.foto1{
+   width:100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.foto2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+ @media screen and (max-width:700px) {
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        position:fixed;
+        justify-content:space-around;
+        align-items: center;
+        font-family: 'Noto Serif Khojki', serif;
+        color: white;
+        flex-wrap: wrap;
+        
+    
+    
+    }
+    
+    nav {
+        background: linear-gradient(rgb(21, 107, 11), transparent);
+        border-bottom: 0.1px solid greenyellow;
+    
+    }
+    
+    .logo {
+        
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    .itens {
+        margin: 0 10px 0 10px;
+        padding: 0 10px 0 10px;
+    }
+    
+    .itens li {
+        padding: 0 50px 0 50px;
+    }
+    
+    .itens-registro li {
+        width: 100%;
+        padding: 0 5px 0 5px;
+    
+    }
+    
+    .itens-registro {
+        margin: 0 5vw 0 20vw;
+    }
+    main{ width: 100%;
+        height: 100%;
+        background: url("../imagens/capa2.jpg");
+        background-size: cover;
+    }
+    
+    main {
+        width: 100%;
+        height: 100%;
+        /* position: absolute; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    
+    }
+    
+    .titulo {
+        color: white;
+        font-size: 50px;
+    }
+    
+    .imagem-susten {
+        width: 2fr;
+        height: 25vw;
+        border-radius: 100%;
+        margin-top: 4%;
+        padding: 10px 10px 10px 10px;
+    
+    }
+    
+    main img {
+        box-shadow: 0 0 10px 5px rgb(14, 197, 38);
+        /*adicionando sombra na imagem sustentavel*/
+    }
+    
+    .itens li:hover {
+        /* background: rgb(97, 211, 101); */
+        font-size: 150%;
+        cursor: pointer;
+        transition: 1s;
+        /* box-shadow: 0 0 5px 0 rgb(220, 227, 220); */
+    }
+    
+     .logo img{
+        height: 3vw;
+    
+    }
+    .logo P{
+        display: flex;
+        align-items: center;
+    }
+    .classe-historia{
+        width:100%;
+        height:70%;
+        display: grid;
+        color: white;
+        font-family:'Dancing Script', cursive;
+        font-size:55px; 
+        grid-template-columns: 50% 50%;
+        background-color: darkslategray;
+    
+    
+    }
+    
+    .grid-descricao{
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+       
+    }
+    
+    .grid-descricao h1{
+        text-align: center;
+        /* margin: 10px 0 20px; */
+    }
+    
+    .grid-descricao p{
+    line-height: 1.8;
+    text-indent: 1.5em;
+    
+    }
+    
+    .grid-fotos{
+        width: 100%;
+        height:100%;
+        display: flex;
+        /* grid-template-columns: 50% 50%; */
+        /* object-fit: cover; */
+        /* gap: 5px 10px  ;  */
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    .grid-fotos img{
+        width:90%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        border-radius: 3px;
+        /* overflow: hidden; */
+    }
+    
+    .foto1{
+       width:100%;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+
+} 
